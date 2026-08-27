@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+
+    padding: 20px;
+}
+
+
+/* Calculator */
+
+.calculator {
+    width: 100%;
+    max-width: 380px;
+
+    padding: 25px;
+
+    background: #1c1c1c;
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Heading */
+
+.calculator h1 {
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+    font-size: 26px;
+}
+
+
+/* Display */
+
+.display {
+    height: 110px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    background: #101010;
+
+    color: white;
+
+    text-align: right;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    overflow: hidden;
+}
+
+#previous {
+    color: #aaa;
+
+    font-size: 16px;
+
+    min-height: 22px;
+}
+
+#current {
+    font-size: 38px;
+
+    font-weight: bold;
+
+    word-wrap: break-word;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+button {
+    height: 65px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #333;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+
+/* Hover */
+
+button:hover {
+    transform: scale(1.05);
+
+    background: #444;
+}
+
+
+/* Click */
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* Operators */
+
+.operator {
+    background: #ff9500;
+}
+
+.operator:hover {
+    background: #ffad33;
+}
+
+
+/* Clear */
+
+.clear {
+    background: #d9534f;
+}
+
+.clear:hover {
+    background: #e66a66;
+}
+
+
+/* Equals */
+
+.equals {
+    background: #28a745;
+
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background: #3ac05a;
+}
+
+
+/* Zero */
+
+.zero {
+    grid-column: span 2;
+}
+
+
+/* Mobile */
+
+@media (max-width: 450px) {
+
+    .calculator {
+        padding: 18px;
+    }
+
+    button {
+        height: 60px;
+
+        font-size: 18px;
+    }
+
+    #current {
+        font-size: 32px;
+    }
+
+}
