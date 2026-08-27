@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✨ My Image Gallery</h1>
+        <p>Explore beautiful moments</p>
+    </header>
+
+    <!-- Category Buttons -->
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="travel">Travel</button>
+        <button class="filter-btn" data-category="city">City</button>
+    </div>
+
+    <!-- Gallery -->
+    <main class="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                 alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
+                 alt="Travel">
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800"
+                 alt="City">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                 alt="Forest">
+        </div>
+
+        <div class="gallery-item" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
+                 alt="Mountain">
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800"
+                 alt="City">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+                 alt="Landscape">
+        </div>
+
+        <div class="gallery-item" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+                 alt="Beach">
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="close">&times;</button>
+
+        <button class="prev" id="prev">&#10094;</button>
+
+        <img id="lightbox-img" src="" alt="Selected Image">
+
+        <button class="next" id="next">&#10095;</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
